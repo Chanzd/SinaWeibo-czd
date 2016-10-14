@@ -1,0 +1,70 @@
+//
+//  PrefixHeader.pch
+//  新浪微博-czd
+//
+//  Created by mac on 2016/10/9.
+//  Copyright © 2016年 czd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#import "ThemeManager.h"
+#import "SinaWeibo.h"
+#import "UIViewExt.h"
+#import "UserModel.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "MBProgressHUD.h"
+#import "UIImageView+WebCache.h"
+
+
+
+#define kAppKey @"622730547"
+#define kAppSecret @"07a6058e99260572acf4f72dc58cc9bb"
+#define kAppRedirectURL @"http://www.baidu.com"
+
+
+//主题切换通知名
+#define kThemeChangeNotificationKey @"kThemeChangeNotificationKey"
+
+//系统版本号
+#define kSystemVersion ([[UIDevice currentDevice].systemVersion floatValue])
+
+//屏幕宽高
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+
+//微博对象获取
+#define kSinaWeiboObject  ((AppDelegate *)[UIApplication sharedApplication].delegate).sina
+
+
+
+//------------------------字体颜色------------------------
+//More界面单元格字体颜色
+#define kMoreItemTextColor @"More_Item_Text_color"
+//More界面，表视图中单元格分割线颜色
+#define kMoreItemLineColor @"More_Item_Line_color"
+//Home 微博正文颜色
+#define kHomeWeiboTextColor @"Timeline_Content_color"
+//Home 转发微博正文颜色
+#define kHomeReWeiboTextColor @"Detail_Content_color"
+//Home 时间/来源文本颜色
+#define kHomeTimeLabelTextColor @"Timeline_Time_color"
+//Home 用户名文本颜色
+#define kHomeUserNameTextColor @"Timeline_Name_color"
+
+#define KLinkColor @"link_color"
+
+//微博正文字体大小
+#define kWeiboTextFont [UIFont systemFontOfSize:16]
+
+//转发微博字体大小
+#define kReWeiboTextFont [UIFont systemFontOfSize:14]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
